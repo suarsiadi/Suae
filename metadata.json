@@ -1,0 +1,6 @@
+{
+  "name": "Soufflé Pancake Cafe",
+  "description": "An elegant, warm, and highly aesthetic website for the premium Soufflé Pancake Cafe, designed for Gen Z with a cozy cream-beige palette and flawless transitions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

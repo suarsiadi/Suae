@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-cafe-cream: #FDFBF7;
+  --color-cafe-beige: #E9E4DB;
+  --color-cafe-taupe: #E2DBD0;
+  --color-cafe-warm-brown: #C28E5A;
+  --color-cafe-dark-espresso: #5C4033;
+  --color-cafe-terracotta: #D4A373;
+  --color-cafe-text-muted: #7E6557;
+}
+
+/* Reusable Glassmorphism classes */
+.glass-panel {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-panel-heavy {
+  background-color: rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.glass-item {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Base enhancements */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cafe-cream);
+  color: var(--color-cafe-dark-espresso);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar to match cafe theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cafe-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-cafe-taupe);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cafe-warm-brown);
+}
